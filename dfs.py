@@ -33,9 +33,9 @@ def dfs_iterative (root):
             discovered.append(node)
      
 print("******* depth first search   ******* \n")
-print("*******       recursive      ******* \n")
+print("\n*******       recursive      ******* \n")
 dfs("A")
-print("*******       iterative      ******* \n")
+print("\n*******       iterative      ******* \n")
 dfs_iterative("A")
 
 
