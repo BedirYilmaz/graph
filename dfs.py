@@ -1,5 +1,3 @@
-import queue
-
 # depth first search
 
 graph = {
