@@ -19,9 +19,24 @@ def dfs (edge):
     for next_edge in graph[edge]:
         dfs(next_edge)
     
-    
+def dfs_iterative (root):
+    mem = []
+    discovered = []
+    mem.append(root)
+
+    while len(mem) > 0:
+        node = mem.pop()
+        print(node)
+        if node not in discovered:
+            for neighbor in graph[node]:
+                mem.append(neighbor)
+            discovered.append(node)
+     
 print("******* depth first search   ******* \n")
+print("*******       recursive      ******* \n")
 dfs("A")
+print("*******       iterative      ******* \n")
+dfs_iterative("A")
 
 
 
